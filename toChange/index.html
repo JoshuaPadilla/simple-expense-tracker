@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+</head>
+<body>
+    <div id="nav-container">
+        <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+        <div class="slide">
+            <h1>MENU</h1>
+            <ul id="nav-list">
+                <li class="active"><a href="#"><i class="fa-solid fa-house"></i></i></a>Home</li>
+                <li><a href="#"><i class="fa-solid fa-money-check-dollar"></i></a>New Expenses</li>
+                <li><a href="#"><i class="fa-solid fa-money-check"></i></a>Add budget</li>
+                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i></a>History</li>
+                <li><a href="#"><i class="fa-solid fa-chart-simple"></i></a>View Insights</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="dashboard-container">
+        <div id="dashboard-header">
+            <div id="profile">
+                <img src="./images/profile.jpg" alt="">
+                <div id="info">
+                    <h2 id="edit-btn">Edit</h2>
+                    <h1 id="name">Joshua Vincent Padilla</h1>
+                    <div id="avg">
+                        <div id="income" class="avg-item">
+                            <h3>Average Budget: </h3>
+                            <p>P 100,000</p>
+                        </div>
+    
+                        <div id="expenses" class="avg-item">
+                            <h3>Average Expense: </h3>
+                            <p>P 100,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        
+        <div id="dashboard-history">
+
+        </div>
+
+        <div id="add-option">
+
+        </div>
+
+        <div id="total-summary">
+
+        </div>
+    </div>
+
+    
+    <script src="./charts.js"></script>
+</body>
+</html>

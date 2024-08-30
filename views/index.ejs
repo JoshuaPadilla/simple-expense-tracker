@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+
+    <div id="dashboard-container">
+        <div id="dashboard-header">
+            <div id="profile">
+                <img src="./images/profile.jpg" alt="">
+                <div id="info">
+                    <h2 id="edit-btn">Edit</h2>
+                    <h1 id="name">Joshua Vincent Padilla</h1>
+                    <div id="avg">
+                        <div id="income" class="avg-item">
+                            <h3>Average Budget: </h3>
+                            <p>P 100,000</p>
+                        </div>
+
+                        <div id="expenses" class="avg-item">
+                            <h3>Average Expense: </h3>
+                            <p>P 100,000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="chart">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        
+        <div id="dashboard-history">
+
+        </div>
+
+        <div id="add-option">
+
+        </div>
+
+        <div id="total-summary">
+
+        </div>
+    </div>
+
+<%- include("partials/footer.ejs") %>
