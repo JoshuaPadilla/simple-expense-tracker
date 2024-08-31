@@ -5,7 +5,7 @@ var barColors = [
   "#FF6969"
 ];
 
-new Chart("myChart", {
+new Chart("pieChart", {
   type: "pie",
   data: {
     labels: xValues,
