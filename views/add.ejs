@@ -1,0 +1,85 @@
+<%- include("partials/header.ejs") %>
+
+    <div class="add-container">
+        <div id="add-form">
+            <div id="add-heading">
+                <h1 class="option active">Budget</h1>
+                <h1 class="option">Expenses</h1>
+            </div>
+
+            <form action="/budget" method="POST" class="budget input-forms">
+                <div class="input" id="source">
+                    <label for="source">Source of budget</label>
+                    <input type="text" name="source" id="source" required>
+                </div>
+                
+                <div class="input" id="amount">
+                    <label for="amount">Amount</label>
+                    <input type="text" name="amount" id="amount" required>
+                </div>
+
+                <div class="input" id="category">
+                    <label for="category">category</label>
+                    <select name="category" id="category">
+                        <option value="Salary">Salary</option>
+                        <option value="Allowance">Allowance</option>
+                        <option value="Side Income">Side Income</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+
+                <div class="input" id="note">
+                    <label for="note">note</label>
+                    <textarea type="text" name="note" id="note" placeholder="optional"></textarea>
+                </div>
+                
+                <input type="submit" id="submit">
+            </form>
+
+
+
+            <form action="/expenses" method="POST" class="expense input-forms hide">
+                <div class="input" >
+                    <label for="name">Expense name</label>
+                    <input type="text" name="name" required>
+                </div>
+                
+                <div class="input" id="amount">
+                    <label for="amount">Amount</label>
+                    <input type="text" name="amount" id="amount" required>
+                </div>
+
+                <div class="input" id="category">
+                    <label for="category">category</label>
+                    <select name="category" id="category">
+                        <option value="Transportaion">Transportaion</option>
+                        <option value="Food and Grocery">Food and Grocery</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Utilities">Utilities</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+
+                <div class="input" id="note">
+                    <label for="note">note</label>
+                    <textarea type="text" name="note" id="note" placeholder="optional"></textarea>
+                </div>
+                
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </div>
+
+        <!-- <div id="expense-form">
+            <form action="/home" method="POST" id="budget-form">
+            <input type="text" name="amount" id="amount">
+            <input type="text" name="category" id="category">
+            
+            <input type="submit" name="submit" id="submit">
+        </form>
+        </div> -->
+    </div>
+
+    <script src="scripts/addActions.js"></script>
+<%- include("partials/footer.ejs") %>

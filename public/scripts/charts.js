@@ -1,5 +1,5 @@
 var xValues = ["Budget", "Expenses"];
-var yValues = [55, 49];
+var yValues = [1, 0];
 var barColors = [
   "#B0EBB4",
   "#FF6969"

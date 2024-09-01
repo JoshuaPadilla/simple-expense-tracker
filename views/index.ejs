@@ -36,25 +36,29 @@
                     <th>Category</th>
                 </tr>
 
+                <%list.forEach((item) => { %>
                 <tr>
-                    <td>Date</td>
-                    <td>Budget</td>
-                    <td>Expenses</td>
-                    <td>tag</td>
+                    <td> <%= item.date %></td>
+                    <td><%= item.type %></td>
+                    <td><%= item.amount %></td>
+                    <td><%= item.category %></td>
                 </tr>
+                <%});%>
             </table>
         </div>
 
         <div id="quick-action">
-            <div class="actions">
+            <form action="/add" method="GET" class="hdn-forms" id="add"></form>
+
+            <div class="actions" id="add-action">
                 <i class="fa-solid fa-plus"></i>
                 <p>add</p>
             </div>
-            <div class="actions">
+            <div class="actions" id="edit-action">
                 <i class="fa-solid fa-pen"></i>
                 <p>edit</p>
             </div>
-            <div class="actions">
+            <div class="actions" id="delete-action">
                 <i class="fa-solid fa-trash-can"></i>
                 <p>delete</p>
             </div>
@@ -87,5 +91,8 @@
             </div>
         </div>
     </div>
+
+    <script src="scripts/charts.js"></script>
+    <script src="scripts/homeActions.js"></script>
 
 <%- include("partials/footer.ejs") %>
